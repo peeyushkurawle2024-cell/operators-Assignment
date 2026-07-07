@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class ToggleThirdBit {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
+
+        int result = n ^ (1 << 2);
+
+        System.out.println("After Toggling 3rd Bit = " + result);
+
+        sc.close();
+    }
+}
